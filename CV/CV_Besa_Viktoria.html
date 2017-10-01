@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CV Besa Viktoria</title>
+<link rel="stylesheet" type="text/css" href="CV.css">	
+</head>
+<body>
+	<h1 id="Titlu">Curriculum Vitae</h1>
+	<h1 id="Nume">Besa Viktoria</h1>
+	<h2 id="Info">Informatii personale </h2>
+	<img onmouseover ="marestePoza(this)" onmouseout ="marimeNormala(this)" src="poza.jpg" alt="Besa Viktoria" width="200" height="200">
+	<div>
+<br><br><br>
+</div>
+<div id="Informatii">
+<p>Data nasterii: 28.08.1991</p>
+<p>Adresa: Primăverii nr 15/1, 540174 Tîrgu-Mureş</p>
+<p>Adresa de mail: vikic.besa@gmail.com</p>
+<p>Numar de telefon: 0746099761</p>
+</div>
+<div></div>
+<h2 id="Educatie">Educatie si formare </h2>
+<p>Perioada: 2014-2016</p>
+<p>Masterat in Relatii Publice si Publicitate, limba germana</p>
+<p id="Mouse"><a href="http://fspac.ubbcluj.ro/" target="_blank">Facultatea de Stiinte Politice, Administrative si ale Comunicarii, din cadrul UBB</a></p>
+<p></p>
+
+<script>
+	function marestePoza(x){
+		x.style.height=400px;
+		x.style.width=400px;
+}
+
+function marimeNormala(x){
+
+	x.style.height=200px;
+	x.style.width=200px;
+}
+
+document.getElementById("Mouse").addEventListener("mouseover", mouseOver);
+document.getElementById("Mouse").addEventListener("mouseout", mouseOut);
+
+function mouseOver(){
+	document.getElementById("Mouse").style.color= "red";
+}
+
+function mouseOut(){
+	document.getElementById("Mouse").style.color= "purple";
+}
+
+</script>
+</body>
+</html>
